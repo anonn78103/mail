@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram • Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .phone-mockup {
+            max-width: 450px;
+            margin-right: 32px;
+        }
+
+        .phone-mockup img {
+            width: 100%;
+            height: auto;
+        }
+
+        .login-container {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .instagram-logo {
+            margin: 36px 0;
+            font-family: 'Billabong', cursive;
+            font-size: 50px;
+            font-weight: normal;
+        }
+
+        .login-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-input {
+            width: 100%;
+            background-color: #121212;
+            border: 1px solid #333;
+            border-radius: 4px;
+            padding: 10px 8px;
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .login-button {
+            width: 100%;
+            background-color: #0095F6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 0;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 10px 0 20px;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: 10px 0 18px;
+        }
+
+        .divider-line {
+            flex-grow: 1;
+            height: 1px;
+            background-color: #333;
+        }
+
+        .divider-text {
+            margin: 0 18px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #999;
+        }
+
+        .facebook-login {
+            display: flex;
+            align-items: center;
+            color: #385185;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #1877F2;
+        }
+
+        .facebook-icon {
+            margin-right: 8px;
+            color: #1877F2;
+        }
+
+        .forgot-password {
+            color: #00376B;
+            font-size: 12px;
+            margin-top: 12px;
+            text-decoration: none;
+            color: #999;
+        }
+
+        .signup-container {
+            width: 350px;
+            background-color: #121212;
+            border: 1px solid #333;
+            border-radius: 1px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+
+        .signup-text {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .signup-link {
+            color: #0095F6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .get-app {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .get-app-text {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .app-download {
+            display: flex;
+            justify-content: center;
+        }
+
+        .app-download a {
+            margin: 0 4px;
+        }
+
+        .app-download img {
+            height: 40px;
+        }
+
+        .footer {
+            padding: 20px 0;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            margin-top: auto;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-link {
+            margin: 0 8px 8px;
+            color: #999;
+            text-decoration: none;
+        }
+
+        .language-selector {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 16px;
+        }
+
+        .copyright {
+            color: #999;
+        }
+
+        @media (max-width: 875px) {
+            .phone-mockup {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="phone-mockup">
+            <img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdyy5jofc5c37eussw417.png" alt="Instagram on mobile devices">
+        </div>
+        <div class="login-section">
+            <div class="login-container">
+                <h1 class="instagram-logo">Instagram</h1>
+                <div class="login-form">
+                    <input type="text" class="form-input" placeholder="Phone number, username, or email">
+                    <input type="password" class="form-input" placeholder="Password">
+                    <button class="login-button">Log in</button>
+
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-text">OR</div>
+                        <div class="divider-line"></div>
+                    </div>
+
+                    <a href="#" class="facebook-login">
+                        <span class="facebook-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="#1877F2">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </span>
+                        Log in with Facebook
+                    </a>
+
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+            </div>
+
+            <div class="signup-container">
+                <p class="signup-text">Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+            </div>
+
+            <div class="get-app">
+                <p class="get-app-text">Get the app.</p>
+                <div class="app-download">
+                    <a href="#">
+                        <img src="data:image/jpeg;base64,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"> 
